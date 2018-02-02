@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Grid } from 'semantic-ui-react';
-
 import Layout from './Layout';
-import Features from './Features';
-import Profile from './Profile';
+import Footer from './Footer';
+import AddTaskForm from '../container/AddTaskForm';
+import VisibleTaskList from '../container/VisibleTaskList';
 
 const Home = () => {
   return (
@@ -12,11 +12,10 @@ const Home = () => {
       <Grid stackable columns={2}>
         <Grid.Row>
           <Grid.Column>
-            <Features />
+            <AddTaskForm />
+            <VisibleTaskList />
+            <Footer />
             <Link to="/dynamic">Navigate to Dynamic Page</Link>
-          </Grid.Column>
-          <Grid.Column>
-            <Profile />
           </Grid.Column>
         </Grid.Row>
       </Grid>

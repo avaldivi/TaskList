@@ -1,10 +1,10 @@
 {
-  "name": "react-starter-boilerplate-hmr",
+  "name": "Task-List",
   "version": "1.0.0",
-  "description": "React starter boilerplate with Hot Module Replacement, React 16 and Webpack 3",
+  "description": "React 16, Semantic UI, Webpack 3 & Redux Practice",
   "main": "index.js",
-  "author": "Esau Silva",
-  "license": "MIT",
+  "author": "Adrianna Valdivia",
+  "license": "None",
   "scripts": {
     "dev": "webpack-dev-server --env.env=dev",
     "dev:bundleanalyzer": "yarn dev --env.addons=bundleanalyzer",
@@ -13,12 +13,16 @@
     "build:bundleanalyzer": "yarn build --env.addons=bundleanalyzer"
   },
   "dependencies": {
+    "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-delay-render": "^0.1.2",
     "react-dom": "^16.2.0",
     "react-imported-component": "^1.0.3",
     "react-prop-types": "^0.4.0",
+    "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-devtools": "^3.4.1",
     "semantic-ui-react": "^0.75.1"
   },
   "devDependencies": {

@@ -1,21 +1,12 @@
-# react-starter-boilerplate-hmr
+# TaskList
 
-> React Starter Boilerplate with Hot Module Replacement and Webpack 3
+> React 16, Redux, React-Router, Semantic UI
 
-## Features
+## Features React-Starter-Boilerplate
 
- - React 16
- - React Router 4
- - Semantic UI as the CSS Framework
- - Hot Module Replacement
- - CSS Autoprefixer
- - CSS Modules with SourceMap
- - Stage 1 Preset
- - Webpack 3
- - Code splitting by Route and Vendor
- - [Webpack Bundle Analyzer](https://github.com/th0r/webpack-bundle-analyzer) 
- - Take a look at [package.json](https://github.com/esausilva/react-starter-boilerplate-hmr/blob/master/package.json)
- 
+ - [React-Starter-BoilerPlate](https://github.com/esausilva/react-starter-boilerplate-hmr)
+
+
 ### Usage
 
 Install dependencies
@@ -54,4 +45,3 @@ Run on the production oprimized build
 $ yarn build:bundleanalyzer
 ```
 
--Esau Silva

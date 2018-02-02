@@ -7,15 +7,15 @@ import Loading from './Loading';
 
 const AsyncDynamicPAge = importedComponent(
   () => import(/* webpackChunkName:'DynamicPage' */ './DynamicPage'),
-  {
-    LoadingComponent: Loading
-  }
+    {
+      LoadingComponent: Loading
+    }
 );
 const AsyncNoMatch = importedComponent(
   () => import(/* webpackChunkName:'NoMatch' */ './NoMatch'),
-  {
-    LoadingComponent: Loading
-  }
+    {
+      LoadingComponent: Loading
+    }
 );
 
 const App = () => {
