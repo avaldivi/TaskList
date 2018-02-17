@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
   return (
     <div>
       <SideBarNav>
-        <Container>
+        <Container style={{height: '500'}}>
           {children}
           <Divider />
           <p>

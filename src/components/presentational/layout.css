@@ -11,3 +11,17 @@
 .margin-top {
   margin-top: 23px !important;
 }
+
+.ui.button {
+  background-color: white !important;
+}
+
+.ui.sidebar.vertical {
+  height: 100vh !important;
+  max-height: unset !important;
+  border-radius: 0px !important;
+}
+
+.pushable {
+  overflow-x: unset !important;
+}

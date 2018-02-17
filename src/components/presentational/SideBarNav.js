@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import { Sidebar, Header, Button, Menu, Icon, Grid} from 'semantic-ui-react'
 
-import {h1} from './layout.css';
+import { h1, bkg } from './layout.css';
 
 class SideBarNav extends Component {
   state = { visible: false }
@@ -15,18 +15,18 @@ class SideBarNav extends Component {
       <div>
         <Grid columns={2}>
           <Grid.Row>
-            <Grid.Column>
-              <Button onClick={this.toggleVisibility}>
-                <Icon name='align justify' size='large' />
-              </Button>
-            </Grid.Column>
-            <Grid.Column>
-              <Link to="/">
-                <Header as="h1" className={h1}>
-                  Daily Task List
-                </Header>
-              </Link>
-            </Grid.Column>
+            {/*<Grid.Column>*/}
+              {/*<Button as="button" className={bkg} onClick={this.toggleVisibility}>*/}
+                {/*<Icon name='align justify' size='large' />*/}
+              {/*</Button>*/}
+            {/*</Grid.Column>*/}
+            {/*<Grid.Column>*/}
+              {/*<Link to="/">*/}
+                {/*<Header as="h1" className={h1}>*/}
+                  {/*Daily Task List*/}
+                {/*</Header>*/}
+              {/*</Link>*/}
+            {/*</Grid.Column>*/}
           </Grid.Row>
         </Grid>
         <Sidebar.Pushable>
@@ -45,6 +45,9 @@ class SideBarNav extends Component {
             </Link>
           </Sidebar>
           <Sidebar.Pusher>
+            <Button as="button" className={bkg} onClick={this.toggleVisibility}>
+              <Icon name='align justify' size='large' />
+            </Button>
             {this.props.children}
           </Sidebar.Pusher>
         </Sidebar.Pushable>
